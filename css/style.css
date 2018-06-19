@@ -1,0 +1,528 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #deddd7;
+	color: #232323;
+	font-family: 'Lumberjack', sans-serif;
+	text-align: justify;
+}
+
+@font-face{
+  font-family: 'Lumberjack';
+  src: url('fontes/Lumberjack.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: 'Nock';
+  src: url('fontes/BebasNeue-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+nav ul{
+	list-style: none;
+	background-color: #999999;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	padding-left: -17px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #000;
+	display: block;
+	transition: 1s background-color;
+}
+
+nav a:hover{
+	background-color: #696d6c;
+}
+
+nav a:focus{
+	background-color: #fff;
+	color: 444;
+	cursor: default;
+}
+
+nav li{
+	font-family: 'Lumberjack', sans-serif;
+	border-bottom: 1px solid #888;
+	width: 120px;
+	border-bottom: none;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.4em;
+}
+
+nav li{
+	display: inline-block;
+	margin-right: -4px;
+}
+
+
+#inicio{
+	position: relative;
+	width: 100%;
+	height: 600px;    
+	padding-top: 40px;
+}
+
+#inicio::after{
+	content: "";
+  	background-image: url('../imagens/bk-image3.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.ini_tex{
+	font-family: 'Nock', sans-serif;
+	color: #FFF;
+	font-size: 120px;
+}
+
+#ini_wel{
+	position: absolute;
+	top: 17%;
+	left: 35%;
+	transform: translate(-35%, -17%);
+	transform: skewY(-7deg);
+	font-size: 147px;
+	text-shadow: 5px 5px 5px black;
+}
+
+#ini_to{
+	position: absolute;
+	top: 32.5%;
+	left: 35%;
+	transform: translate(-35%, -32.5%);
+	transform: skewY(-7deg);
+	font-size: 235px;
+	text-shadow: 5px 5px 5px black;
+}
+
+#ini_work{
+	position: absolute;
+	top: 65%;
+	left: 35%;
+	transform: translate(-35%, -65%);
+	transform: skewY(-7deg);
+	font-size: 118px;
+	text-shadow: 5px 5px 5px black;
+}
+
+footer{
+	background-color: #ccc;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.margix{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.margix h3{
+	color: #000;
+	text-align: center;
+}
+
+.anchor{
+	display:block;
+    padding-top:50px;
+    margin-top:-50px;}
+
+.column {
+    position: relative;
+    float: left;
+    width: 30%;
+    padding: 5px;
+    margin-top: 10px;
+    left: 6%;
+    transform: translate(0, 0);
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row{
+  padding-right: -100px; 
+}
+
+#img_desi{
+	padding: -5px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #999999;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  margin-top: -100px;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+  width: 100%;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+#subject{
+	height:200px;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.containe {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#vinicius_garotao{
+	position: relative;
+	width: 150px;
+	height: 239px;
+	top: 33%;
+	left: 34%;
+	transform: translate(-34%, -33%);
+}
+
+.ser_pic{
+	width: 80%;
+	height: 80%;
+	cursor: pointer;
+}
+
+.ser_slid{
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+  color: #232323;
+}
+
+a:active {
+  color: #232323;
+}
+
+a:visited {
+  color: #232323;
+}
+
+.fab{
+  font-size: 100px;
+  margin-left: 10px; 
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .margix{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  #inicio{
+    position: relative;
+    width: 100%;
+    height: 400px;    
+    padding-top: 40px;
+  }
+
+  #ini_wel{
+    position: absolute;
+    top: 17%;
+    left: 35%;
+    transform: translate(-35%, -17%);
+    transform: skewY(-7deg);
+    font-size: 107px;
+    text-shadow: 5px 5px 5px black;
+  }
+
+  #ini_to{
+    position: absolute;
+    top: 32.5%;
+    left: 35%;
+    transform: translate(-35%, -32.5%);
+    transform: skewY(-7deg);
+    font-size: 170px;
+    text-shadow: 5px 5px 5px black;
+  }
+
+  #ini_work{
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    transform: translate(-35%, -65%);
+    transform: skewY(-7deg);
+    font-size: 83px;
+    text-shadow: 5px 5px 5px black;
+  }
+
+  #vinicius_garotao{
+    position: relative;
+    width: 100px;
+    height: 189px;
+    top: 33%;
+    left: 34%;
+    transform: translate(-34%, -33%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .margix{
+    margin-left: 10px;
+    margin-right: 10px; 
+  }
+
+  .column {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    left: 6%;
+    transform: translate(0, 0);
+  }
+
+  #inicio{
+    position: relative;
+    width: 100%;
+    height: 400px;    
+    padding-top: 40px;
+  }
+
+  #ini_wel{
+    position: absolute;
+    top: 17%;
+    left: 22%;
+    transform: translate(-35%, -17%);
+    transform: skewY(-7deg);
+    font-size: 107px;
+    text-shadow: 5px 5px 5px black;
+  }
+
+  #ini_to{
+    position: absolute;
+    top: 32.5%;
+    left: 22%;
+    transform: translate(-35%, -32.5%);
+    transform: skewY(-7deg);
+    font-size: 170px;
+    text-shadow: 5px 5px 5px black;
+  }
+
+  #ini_work{
+    position: absolute;
+    top: 65%;
+    left: 22%;
+    transform: translate(-35%, -65%);
+    transform: skewY(-7deg);
+    font-size: 83px;
+    text-shadow: 5px 5px 5px black;
+  }
+
+  #vinicius_garotao{
+    position: relative;
+    width: 80px;
+    height: 169px;
+    top: 33%;
+    left: 20%;
+    transform: translate(-34%, -33%);
+  }
+
+  nav li{
+    font-family: 'Lumberjack', sans-serif;
+    border-bottom: 1px solid #888;
+    width: 100px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+}

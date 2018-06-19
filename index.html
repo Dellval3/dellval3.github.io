@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dellvale's Porfólio</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+		<script src="js/jquery.fancybox.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body class="news">
+		<header>
+			<nav>
+				<ul>
+					<li class="inicio"><a href="#inicio">Início</a></li>
+					<li class="sobre"><a href="#sobre">Sobre</a></li>
+					<li class="servicos"><a href="#servicos">Serviços</a></li>
+					<li class="trabalhos"><a href="#trabalhos">Trabalhos</a></li>
+					<li class="contato"><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div id="inicio"> 
+				<div id="ini_wel" class="ini_tex">Welcome</div>
+				<div id="ini_to" class="ini_tex">to my</div>	
+				<div id="ini_work" class="ini_tex">WorkSpace</div> 
+				<img id="vinicius_garotao" src="imagens/vinicius_garotao.png" alt="Design">
+			</div>
+			<div class="anchor panel margix"> 
+				<h3>SOBRE</h3>
+				<p>Sou Vinícius Carlos, um jovem de 18 anos que tem muito o que sonhar e
+				viver. Felizmente, sou Diretor de Marketing da Enactus UFC, Diretor
+				Jurídico-Financeiro (VP) da Container Digital Jr. e Diretor Executivo
+				do site Minha Visão do Cinema.</p>
+				<p>Com muito prazer faço parte dessas coisas, todas com o objetivo de uma
+				melhoria como pessoa e profissional. Cursando o 3º Semestre de Sistemas e
+				Mídias Digitais da Universidade Federal do Ceará (UFC), as minhas principais
+				áreas de interesse são Sistemas, Empreededorismo e Marketing, com aquele pé
+				em interesses avulsos por design. Logo, cães, leopardos e leões são fortes, 
+				mas lobos não vão ao circo.</p>
+			</div>
+			<hr>
+			<div class="anchor margix">
+				<h3>SERVIÇOS</h3>
+				<div class="row">
+					<div class="column">
+						<div class="container">
+							<img class="ser_pic" src="imagens/programação.jpg" alt="Programação">
+							<div class="overlay">
+								<div class="text">Programação</div>
+							</div>
+						</div>
+						<p>C#, C++, Java e PHP.</p>
+					</div>
+					<div class="column">
+						<div class="container">
+							<img class="ser_pic" src="imagens/seo.jpg" alt="SEO">
+							<div class="overlay">
+								<div class="text">SEO</div>
+							</div>
+						</div>
+						<p>Google Analytics, SEO Management.</p>
+					</div>
+					<div id="img_desi" class="column">
+						<div class="container">
+							<img class="ser_pic" src="imagens/web_design.jpg" alt="Design">
+							<div class="overlay">
+								<div class="text">Web Design</div>
+							</div>
+						</div>
+						<p>Full-Stack.</p>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="anchor margix">
+				<h3>TRABALHOS</h3>
+				<div class="row">
+					<div class="column">
+						<a href="imagens/job1.jpg" data-fancybox="images">
+							<img class="ser_pic" src="imagens/job1.jpg" alt="Trabalho 1" class="hover-shadow cursor">
+						</a>
+					</div>
+					<div class="column">
+						<a href="imagens/job2.jpg" data-fancybox="images">
+							<img class="ser_pic" src="imagens/job2.jpg" alt="Trabalho 2" class="hover-shadow cursor">
+						</a>
+					</div>
+					<div class="column">
+						<a href="imagens/job3.jpg" data-fancybox="images">
+							<img class="ser_pic" src="imagens/job3.jpg" alt="Trabalho 3" class="hover-shadow cursor">
+						</a>
+					</div>
+					<div class="column">
+						<a href="imagens/job4.jpg" data-fancybox="images">
+							<img class="ser_pic" src="imagens/job4.jpg" alt="Trabalho 4" class="hover-shadow cursor">
+						</a>
+					</div>
+					<div class="column">
+						<a href="imagens/job5.jpg" data-fancybox="images">
+							<img class="ser_pic" src="imagens/job5.jpg" alt="Trabalho 5" class="hover-shadow cursor">
+						</a>
+					</div>
+					<div class="column">
+						<a href="imagens/job6.jpg" data-fancybox="images">
+							<img class="ser_pic" src="imagens/job6.jpg" alt="Trabalho 6" class="hover-shadow cursor">
+						</a>
+					</div>
+				</div>
+				<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+						<div class="mySlides">
+					  		<div class="numbertext">1 / 6</div>
+						  	<img class="ser_slid" src="imagens/job1.jpg">
+						</div>
+
+						<div class="mySlides">
+						  	<div class="numbertext">2 / 6</div>
+						  	<img class="ser_slid" src="imagens/job2.jpg">
+						</div>
+
+						<div class="mySlides">
+						  	<div class="numbertext">3 / 6</div>
+						  	<img class="ser_slid" src="imagens/job3.jpg">
+						</div>
+
+						<div class="mySlides">
+						  	<div class="numbertext">4 / 6</div>
+						  	<img class="ser_slid" src="imagens/job4.jpg">
+						</div>
+
+						<div class="mySlides">
+						  	<div class="numbertext">5 / 6</div>
+						  	<img class="ser_slid" src="imagens/job5.jpg">
+						</div>
+
+						<div class="mySlides">
+						  	<div class="numbertext">6 / 6</div>
+						  	<img class="ser_slid" src="imagens/job6.jpg">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<div class="caption-container">
+						  	<p id="caption"></p>
+						</div>
+
+
+						<div class="column">
+						  	<img class="demo cursor" src="imagens/job1.jpg" onclick="currentSlide(1)" alt="Nature and sunrise">
+						</div>
+						<div class="column">
+						  	<img class="demo cursor" src="imagens/job2.jpg" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+						</div>
+						<div class="column">
+						  	<img class="demo cursor" src="imagens/job3.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+						</div>
+						<div class="column">
+						  	<img class="demo cursor" src="imagens/job4.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+						</div>
+						<div class="column">
+						  	<img class="demo cursor" src="imagens/job5.jpg" onclick="currentSlide(5)" alt="Northern Lights">
+						</div>
+						<div class="column">
+						  	<img class="demo cursor" src="imagens/job6.jpg" onclick="currentSlide(6)" alt="Northern Lights">
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="anchor margix">
+				<h3>CONTATO</h3>
+				<div class="containe">
+					<form action="/action_page.php">
+						<label for="fname">Nome</label>
+						<input type="text" id="fname" name="firstname" placeholder="Seu Nome...">
+
+						<label for="lname">E-mail</label>
+						<input type="text" id="lname" name="lastname" placeholder="email@email.com">
+
+						<label for="country">Serviço</label>
+						<select id="country" name="country">
+							<option value="visual">Visual</option>
+							<option value="programação">Programação</option>
+							<option value="Full-Stack">Full-Stack</option>
+						</select>
+
+						<label for="subject">Texto</label>
+						<textarea id="subject" name="subject" placeholder="Mande sua mensagem"></textarea>
+
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<a target="_blank" href="http://www.fb.com/dellval3"><i class="fab fa-facebook"></i></a>
+			<a target="_blank" href="https://twitter.com/DellvaleChew"><i class="fab fa-twitter-square"></i></a>
+			<a target="_blank" href="https://instagram.com/v_dellvale"><i class="fab fa-instagram"></i></a>
+		</footer>
+	</body>
+</html>
