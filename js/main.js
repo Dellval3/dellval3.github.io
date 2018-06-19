@@ -14,7 +14,16 @@ $().ready(function(){
 
 	setTimeout(function(){
 		if (garotao == 0) {
-			$("#vinicius_garotao").animate({top: '33%'}, 700);
+			$("#ini_wel").animate({left: '35%'}, 500);
+			setTimeout(function(){
+				$("#ini_work").animate({left: '35%'}, 500);
+			}, 500);
+			setTimeout(function(){
+				$("#ini_to").animate({top: '32.5%'}, 500);
+			}, 800);
+			setTimeout(function(){
+				$("#vinicius_garotao").animate({top: '33%'}, 700);
+			}, 1000)
 	    	garotao = 1;
 		}
 	}, 1000);
