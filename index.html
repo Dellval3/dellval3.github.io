@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
 		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
 		<script src="js/jquery.fancybox.min.js"></script>
 		<script src="js/main.js"></script>
 	</head>
@@ -29,7 +29,7 @@
 				<div id="ini_work" class="ini_tex">WorkSpace</div> 
 				<img id="vinicius_garotao" src="imagens/vinicius_garotao.png" alt="Design">
 			</div>
-			<div id="sobre" class="anchor panel margix"> 
+			<div class="anchor panel margix"> 
 				<h3>SOBRE</h3>
 				<p>Sou Vinícius Carlos, um jovem de 18 anos que tem muito o que sonhar e
 				viver. Felizmente, sou Diretor de Marketing da Enactus UFC, Diretor
@@ -43,7 +43,7 @@
 				mas lobos não vão ao circo.</p>
 			</div>
 			<hr>
-			<div id="servicos" class="anchor margix">
+			<div class="anchor margix">
 				<h3>SERVIÇOS</h3>
 				<div class="row">
 					<div class="column">
@@ -76,7 +76,7 @@
 				</div>
 			</div>
 			<hr>
-			<div id="trabalhos" class="anchor margix">
+			<div class="anchor margix">
 				<h3>TRABALHOS</h3>
 				<div class="row">
 					<div class="column">
@@ -173,10 +173,10 @@
 				</div>
 			</div>
 			<hr>
-			<div id="contato" class="anchor margix">
+			<div class="anchor margix">
 				<h3>CONTATO</h3>
 				<div class="containe">
-					<form>
+					<form action="/action_page.php">
 						<label for="fname">Nome</label>
 						<input type="text" id="fname" name="firstname" placeholder="Seu Nome...">
 
@@ -193,7 +193,7 @@
 						<label for="subject">Texto</label>
 						<textarea id="subject" name="subject" placeholder="Mande sua mensagem"></textarea>
 
-						<input id="enviar" type="submit" value="Enviar">
+						<input type="submit" value="Submit">
 					</form>
 				</div>
 			</div>

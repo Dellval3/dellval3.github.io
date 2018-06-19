@@ -1,21 +1,36 @@
-$().ready(function(){
-	var garotao = 0;
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
 
-	$('a[href^="#"]').click(function(){
-		$("html, body").animate({
-			scrollTop: $( $.attr(this, "href")).offset().top
-		}, 600);
-		return false;
-	});
-	
-	$("#enviar").click(function(){
-		alert("Por hora estamos sem o back-end, por favor mande um e-mail para dellvale@alu.ufc.br");
-	});
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
 
-	setTimeout(function(){
-		if (garotao == 0) {
-			$("#vinicius_garotao").animate({top: '33%', left: '34%', transform: 'translate(-34%, -33%)'}, 800);
-	    	garotao = 1;
-		}
-	}, 1000);
-});   
+// var slideIndex = 1;
+// showSlides(slideIndex);
+
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("demo");
+//   var captionText = document.getElementById("caption");
+//   if (n > slides.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//       dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";
+//   dots[slideIndex-1].className += " active";
+//   captionText.innerHTML = dots[slideIndex-1].alt;
+// }
