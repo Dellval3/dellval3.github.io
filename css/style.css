@@ -367,7 +367,7 @@ input[type=submit]:hover {
 	position: relative;
 	width: 150px;
 	height: 239px;
-	top: 33%;
+	top: -33%;
 	left: 34%;
 	transform: translate(-34%, -33%);
 }
